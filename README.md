@@ -15,10 +15,22 @@ powershell.exe -ExecutionPolicy Bypass -File build_usos.ps1
 .\USOS\build\usos.exe
 ```
 
+Portable bundle:
+
+```powershell
+.\USOS\build\dist\usos.exe
+```
+
 Interactive codebreaker mode:
 
 ```powershell
 .\USOS\build\usos.exe codebreaker
+```
+
+Portable interactive mode:
+
+```powershell
+.\USOS\build\dist\usos.exe codebreaker
 ```
 
 ## Output
@@ -27,3 +39,4 @@ The build produces:
 
 * `USOS/build/libusos.a`
 * `USOS/build/usos.exe`
+* `USOS/build/dist/` with the runtime DLLs needed to run on another Windows machine

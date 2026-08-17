@@ -103,4 +103,21 @@ if ($LASTEXITCODE -ne 0) {
     throw "Executable link failed"
 }
 
+$distRoot = Join-Path $buildRoot "dist"
+New-Item -ItemType Directory -Force -Path $distRoot | Out-Null
+
+$bundleFiles = @(
+    $exePath,
+    (Join-Path (Split-Path $gcc.Source -Parent) "cygwin1.dll"),
+    (Join-Path (Split-Path $gcc.Source -Parent) "cyggcc_s-seh-1.dll")
+)
+
+foreach ($file in $bundleFiles) {
+    if (Test-Path $file) {
+        Copy-Item $file $distRoot -Force
+    }
+}
+
+Write-Host "Portable bundle created at $distRoot"
+
 Write-Host "USOS Build Complete."
