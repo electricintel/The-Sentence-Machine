@@ -1,4 +1,5 @@
-# TSM / USOS
+# The-Sentence-Machine
+Cross Platform Operating System (attempt)
 
 USOS is a generated C demo tree built by `build_usos.ps1`.
 
