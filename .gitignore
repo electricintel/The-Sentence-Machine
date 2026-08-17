@@ -1,0 +1,5 @@
+USOS/build/
+**/*.o
+**/*.a
+**/*.exe
+*.log
