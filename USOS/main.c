@@ -29,6 +29,7 @@ void sentence_lab_start();
 void ui_render_text(const char* msg);
 void ui_render_box(int w, int h);
 void ui_event(const char* evt);
+void terminal_shell();
 
 int main(int argc, char** argv) {
     puts("[USOS] Booting executable...");
@@ -52,6 +53,8 @@ int main(int argc, char** argv) {
 
     if (argc > 1 && strcmp(argv[1], "codebreaker") == 0) {
         cb_run_console();
+    } else if (argc > 1 && strcmp(argv[1], "shell") == 0) {
+        terminal_shell();
     } else {
         cb_menu();
         cb_decode_morse(".... . .-.. .-.. ---");
@@ -67,6 +70,7 @@ int main(int argc, char** argv) {
     ui_render_text("Boot diagnostics complete");
     ui_render_box(12, 4);
     ui_event("system:boot_complete");
+    ui_render_text("Tip: run usos.exe shell for interactive mode");
 
     puts("[USOS] Boot complete.");
     return 0;

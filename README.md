@@ -27,10 +27,36 @@ Interactive codebreaker mode:
 .\USOS\build\usos.exe codebreaker
 ```
 
+Interactive multi-app shell mode:
+
+```powershell
+.\USOS\build\usos.exe shell
+```
+
+Shell commands:
+
+* `help`
+* `clock`
+* `calc <a> <b>`
+* `note set <text>`
+* `note show`
+* `translate <word>`
+* `sentence <text>`
+* `codebreaker <1-8>`
+* `diag`
+* `ui <event>`
+* `exit`
+
 Portable interactive mode:
 
 ```powershell
 .\USOS\build\dist\usos.exe codebreaker
+```
+
+Portable shell mode:
+
+```powershell
+.\USOS\build\dist\usos.exe shell
 ```
 
 ## Output
