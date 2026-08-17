@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+sentence_machine/__init__.py
+sentence_machine/__main__.py
+sentence_machine/builtins.py
+sentence_machine/executor.py
+sentence_machine/parser.py
+sentence_machine/shell.py
+sentence_machine.egg-info/PKG-INFO
+sentence_machine.egg-info/SOURCES.txt
+sentence_machine.egg-info/dependency_links.txt
+sentence_machine.egg-info/entry_points.txt
+sentence_machine.egg-info/top_level.txt
+tests/test_parser.py
+tests/test_shell.py

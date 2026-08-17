@@ -1,0 +1,2 @@
+[console_scripts]
+sentence-machine = sentence_machine.__main__:main
