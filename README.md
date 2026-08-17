@@ -9,16 +9,12 @@ USOS is a generated C demo tree built by `build_usos.ps1`.
 powershell.exe -ExecutionPolicy Bypass -File build_usos.ps1
 ```
 
-## Run
+## How To Use Now
+
+Standard run:
 
 ```powershell
 .\USOS\build\usos.exe
-```
-
-Portable bundle:
-
-```powershell
-.\USOS\build\dist\usos.exe
 ```
 
 Interactive codebreaker mode:
@@ -31,6 +27,28 @@ Interactive multi-app shell mode:
 
 ```powershell
 .\USOS\build\usos.exe shell
+```
+
+## Portable (USB) Use
+
+Copy the full `USOS/build/dist/` folder to the target machine, then run:
+
+Portable default run:
+
+```powershell
+.\USOS\build\dist\usos.exe
+```
+
+Portable interactive codebreaker mode:
+
+```powershell
+.\USOS\build\dist\usos.exe codebreaker
+```
+
+Portable shell mode:
+
+```powershell
+.\USOS\build\dist\usos.exe shell
 ```
 
 Shell commands:
@@ -46,18 +64,6 @@ Shell commands:
 * `diag`
 * `ui <event>`
 * `exit`
-
-Portable interactive mode:
-
-```powershell
-.\USOS\build\dist\usos.exe codebreaker
-```
-
-Portable shell mode:
-
-```powershell
-.\USOS\build\dist\usos.exe shell
-```
 
 ## Output
 
